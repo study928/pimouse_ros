@@ -1,5 +1,5 @@
 sudo: required
-cript: truste
+dist: truste
 
 script:
   - bash -xve ./test/travis_ros_install.bash
