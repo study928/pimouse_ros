@@ -33,7 +33,8 @@ class LightsensorTest(unittest.TestCase):
 		time.sleep(2)
 
 		with open("/dev/rtlightsensors0", "w") as f:
-			f.write('-1 0 123 4321\n'
+			f.write('-1 0 123 4321\n')
+
                 time.sleep(3)
 
 		
