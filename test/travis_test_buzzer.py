@@ -11,9 +11,11 @@ class BuzzerTest(unittest.TestCase):
 
 	def test_put_value(self):
 		pub = rospy.Publisher('/buzzer', UInt16)
-		for i in range(10):
+                for i in range(10):
+#		for i in range(10):
 			pub.publish(1234)
-			time.sleep(0.1)
+                        time.sleep(0.2)
+#			time.sleep(0.1)
 
 		with open("/dev/rtbuzzer0", "r") as f:
 			data = f.readline()
