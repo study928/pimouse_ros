@@ -4,9 +4,9 @@ import rospy, unittest, rostest
 import rosnode
 import time
 from pimouse_ros.msg import LightSensorValues
-
+			    
 class LightsensorTest(unittest.TestCase):
-	def set_up(self):
+	def setUp(self):
 		self.count = 0
 		rospy.Subscriber('/lightsensors', LightSensorValues, self.callback)
 		self.values = LightSensorValues()
