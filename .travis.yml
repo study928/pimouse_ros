@@ -1,5 +1,8 @@
 sudo: required
 dist: truste
 
+befor script:
+  - pip install --upgrade pip
+
 script:
   - bash -xve ./test/travis_ros_install.bash
