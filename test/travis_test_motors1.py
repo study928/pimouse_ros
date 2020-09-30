@@ -34,8 +34,7 @@ class MotorTest(unittest.Testcase):
             time.sleep(0.1)
 
         self.file_check('rtmotor_raw_l0', 200, 'wronge left value frmm cmd_vel')
-        self.file_check('rtmotor_raw_r0', 600, 'wronge right value from
-        cmd_vel')
+        self.file_check('rtmotor_raw_r0', 600, 'wronge right value from cmd_vel')
 
         time.sleep(1.1)
         self.file_check('rtmotor_raw_r0', 0, "don't stop after 1[s]")
